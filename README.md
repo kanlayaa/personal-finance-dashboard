@@ -4,7 +4,7 @@ The focus is on simplicity, performance, and a clean, responsive user interface 
 
 ---
 ## Demo link
-https://personal-finance-dashboard-4ua7u77p3-kanlayaas-projects.vercel.app/
+https://personal-finance-dashboard-silk.vercel.app/
 
 ## 🚀 Features
 
