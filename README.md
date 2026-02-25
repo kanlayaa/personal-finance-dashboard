@@ -3,6 +3,8 @@ A web application for tracking and visualizing personal finances (income and exp
 The focus is on simplicity, performance, and a clean, responsive user interface that works well across all devices.
 
 ---
+## Demo link
+https://personal-finance-dashboard-4ua7u77p3-kanlayaas-projects.vercel.app/
 
 ## 🚀 Features
 
@@ -19,21 +21,42 @@ The focus is on simplicity, performance, and a clean, responsive user interface 
 - **Icons:** Lucide React
 - **Charts:** Recharts
 ## ⚙️ Setup & Installation
-### 1. Install Dependencies
+### 1.Clone git
+Open your terminal in the project folder and run this command.
+```bash
+git clone https://github.com/kanlayaa/personal-finance-dashboard.git
+```
+### 2. Install Dependencies
 Open your terminal in the project folder and run this command.
 ```bash
 npm install
 ```
 
-### 2. Run
+### 3. Set up Database (Firebase)
+This project uses Firebase as backend service.
+
+**Step 1 : Create Firebase Project**
+Go to Firebase Console and create a new project.
+
+**Step 2 : Enable Cloud Firestore**
+Build → Firestore Database → Create database (Start in test mode)
+
+**Step 3 : Create .env file**
+Create a file named .env in the root directory and add
+```bash
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=xxxx
+VITE_FIREBASE_APP_ID=xxxx
+```
+
+### 4. Run
 ```bash
 npm run dev
 ```
-
-# Decision design
-### 1. Architecture & State Management
-Since the assignment provides mock data, and faster performance is desired, useMemo is used so that the calculation runs only once (unless the data changes).
-### 2. Styling Strategy
-The UI is designed with a mobile-first approach, using a stacked layout for mobile devices, and then expanding into a 3-column grid on desktop screens to ensure a visually pleasing experience on both mobile and desktop.
-### 3. Data Visualization
-The interface focuses on simplicity and readability, with the “Balance” highlighted as the primary element, followed by a summary chart that visualizes overall income and expenses, and a list of recent transactions.
+### 5. Localhost
+```bash
+http://localhost:5173/
+```
